@@ -1,0 +1,43 @@
+http://pxweb2.stat.fi/Dialog/varval.asp?ma=010_ajkul_tau_101&path=../database/StatFin/ter/ajkul/&lang=3&multilang=fi
+tuosta löytyy 1990-2012 aika kätevästi
+100 % alkoholin kulutus eroteltuna tilastoituun ja tilastoimattomaan kulutukseen
+http://fi.wikipedia.org/wiki/Alkoholivero
+tuossa on jotakin tietoa alkoholiverotuksesta
+2004 Viro liittyi EU:hun ja tuontirajoitukset poistuivat
+ero hintojen välillä 60%
+Maaliskuussa 2004 suomessa lasketaan alkoholiveroa (väkevät -44%, oluet -32%, viinit -10%)
+2008 veroa nostettiin väkevillä 15 %, muilla 10 %
+samalla viro nosti alkholiveroaan 30%
+2009 alussa alkoholiveroa korotettiin 10 %, lokakuussa vielä lisää 10%
+2012 alussa mietojen valmistevero nousi 15 %, viinien ja väkevien 10 %
+2014 alkuvuodesta väkevät nousivat 2,2 %, oluet ja viinit 2-2.5% ja välituotteet (väkevät viinit) 3,7%
+http://www.julkari.fi/bitstream/handle/10024/110193/Tr19_13.pdf?sequence=4
+alkoholijuomien hintakehitys 2012, alkaa vuodesta 2000
+http://lib.thl.fi:2345/http:/lib.thl.fi:2345/lib4/?PBFORMTYPE=01002&TITLEID=22241&SQS=1:FIN:1::6:50::HTML&PL=0
+tuo vaikuttais aika mielenkiintoiselta kirjalta tähän aiheeseen
+mitenköhän tuon saatavuus?
+http://www.thl.fi/fi_FI/web/fi/tilastot/aiheittain/paihteet/alkoholi
+http://www.systemdynamics.org/conferences/2011/proceed/papers/P1457.pdf
+tässä on mallinnettu eri tyyppisiä alkoholin käyttäjiä
+http://www.ok.gov/odmhsas/documents/A%20GENERAL%20CAUSAL%20MODEL%20GUIDE%20-%20PIRE.pdf
+Saatavuus: edullinen, helppo ja helposti saatava tuote omaksutaan käyttöön todennäköisemmin kuin kallis, epäkäytännöllinen ja vaikeasti ssaatavqa
+Saatavuuden voi jakaa Taloudelliseen, Myynti- sekä Sosiaaliseen saatavuuteen
+Ensimmäinen tarkoittaa tuotteesta maksettavaa hintaa. Arvioidaan, että keskivertokuluttajat ovat hintatietoisempia kuin vähän tai paljon käyttävät. Toisaalta paljon käyttävät ovat herkempiä hinnalle kuin vähän
+käyttävät.
+Myynnin rajoittamisen on todettu pienentävän alkoholin kulutusta.
+Esimerkkinä myyntiaikojen rajoittaminen tai myynnin rajoittaminen selvästi juopuneille.
+Sosiaalinen saatavuus tarkoittaa kavereilta tai muualta saatua alkoholia, jota ei siis osteta rahalla.
+Liittyy erityisesti alaikäisten juomabaardeihin. Voidaan varmaan jättää huomiotta tämä osuus.
+Mainostus yrittää lisätä alkoholin kulutusta mielikuvia muokkaamalla. Tästä voitais varmaan kehitellä jonkinlainen silmukka. "Kun kotimaisten panimoiden tuotot laskevat -> mainostus lisääntyy ->
+alkoholimyönteisyys kasvaa -> tilastoitu kulutus kasvaa
+Tähän voidaan lisätä vielä alkoholimainonnan rajoitukset
+In contrast, a major
+time-series study of advertising bans implemented in European Community
+countries during the 1970s showed significant effects, including lower levels
+of consumption and alcohol-related problems
+Vitsi tää on kyl hyvä dokumentti näitten juttujen pohtimiseen
+Alkoholin käytön hyväksyttävyys, sopivan käytön raja vaihtelee maittain
+Tässä voitais käyttää esimerkiksi sitä informaatioviiveen mallia, miten kulutustottumukset muuttuu hitaasti
+tai hyväksyttäväksi koettu alkoholin määrä
+Tähän voidaan koittaa vaikuttaa vastamainonnalla
+näiden vaikutuksista ei kuitenkaan ole saatavilla juurikaan dataa
