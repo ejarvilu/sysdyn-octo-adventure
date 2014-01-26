@@ -1,0 +1,129 @@
+{UTF-8}
+Alkoholivero  = A FUNCTION OF( )
+	~	
+	~		|
+
+Hinta kotimaassa  = A FUNCTION OF( Alkoholivero)
+	~	
+	~		|
+
+Hinta ulkomailla  = A FUNCTION OF( )
+	~	
+	~		|
+
+Keskimääräiset matkakustannukset  = A FUNCTION OF( )
+	~	
+	~		|
+
+Kokonaiskulutus  = A FUNCTION OF( Tilastoimaton kulutus,Tilastoitu kulutus)
+	~	
+	~		|
+
+Maahantuotu alkoholi  = A FUNCTION OF( Tuonnin houkuttelevuus)
+	~	
+	~		|
+
+Tilastoimaton kulutus=A FUNCTION OF(Tilastoimaton kulutus,Maahantuotu alkoholi) ~~|
+Tilastoimaton kulutus=
+	~	
+	~		|
+
+Tilastoitu kulutus  = A FUNCTION OF( Tilastoimaton kulutus)
+	~	
+	~		|
+
+Tuonnin houkuttelevuus  = A FUNCTION OF( Hinta kotimaassa,Hinta ulkomailla,Keskimääräiset matkakustannukset\
+		,Tuontirajoitukset)
+	~	
+	~		|
+
+Tuontirajoitukset  = A FUNCTION OF( )
+	~	
+	~		|
+
+Verotulot  = A FUNCTION OF( Alkoholivero,Tilastoitu kulutus)
+	~	
+	~		|
+
+********************************************************
+	.Control
+********************************************************~
+		Simulation Control Parameters
+	|
+
+FINAL TIME  = 100
+	~	Month
+	~	The final time for the simulation.
+	|
+
+INITIAL TIME  = 0
+	~	Month
+	~	The initial time for the simulation.
+	|
+
+SAVEPER  = 
+        TIME STEP 
+	~	Month [0,?]
+	~	The frequency with which output is stored.
+	|
+
+TIME STEP  = 1
+	~	Month [0,?]
+	~	The time step for the simulation.
+	|
+
+\\\---/// Sketch information - do not modify anything except names
+V300  Do not put anything below this section - it will be ignored
+*View 1
+$192-192-192,0,Times New Roman|12||0-0-0|0-0-0|0-0-255|-1--1--1|-1--1--1|96,96,100,0
+10,1,Alkoholivero,161,340,41,11,8,3,0,0,0,0,0,0
+10,2,Hinta kotimaassa,269,255,54,11,8,3,0,0,0,0,0,0
+10,3,Keskimääräiset matkakustannukset,318,79,61,19,8,3,0,0,0,0,0,0
+10,4,Tuonnin houkuttelevuus,547,169,47,19,8,3,0,0,0,0,0,0
+10,5,Hinta ulkomailla,702,77,50,11,8,3,0,0,0,0,0,0
+10,6,Maahantuotu alkoholi,878,174,42,19,8,3,0,0,0,0,0,0
+10,7,Tilastoimaton kulutus,1090,261,43,19,8,131,0,0,0,0,0,0
+10,8,Tilastoitu kulutus,1088,368,52,11,8,3,0,0,0,0,0,0
+10,9,Kokonaiskulutus,857,320,53,11,8,3,0,0,0,0,0,0
+10,10,Verotulot,555,387,31,11,8,3,0,0,0,0,0,0
+1,11,1,2,1,0,43,0,2,64,0,-1--1--1,|0||-1--1--1,1|(175,287)|
+1,12,3,4,1,0,43,0,2,64,0,-1--1--1,|0||-1--1--1,1|(413,130)|
+1,13,5,4,0,0,45,0,2,64,0,-1--1--1,|0||-1--1--1,1|(637,115)|
+1,14,2,4,0,0,43,0,2,64,0,-1--1--1,|0||-1--1--1,1|(395,215)|
+10,15,Tuontirajoitukset,533,78,53,11,8,3,0,0,0,0,0,0
+1,16,4,6,0,0,43,0,2,64,0,-1--1--1,|0||-1--1--1,1|(708,170)|
+1,17,6,7,0,0,43,0,2,64,0,-1--1--1,|0||-1--1--1,1|(977,214)|
+1,18,1,10,1,0,43,0,2,64,0,-1--1--1,|0||-1--1--1,1|(334,405)|
+1,19,7,8,0,0,45,0,2,64,0,-1--1--1,|0||-1--1--1,1|(1089,311)|
+1,20,8,9,0,0,43,0,2,64,0,-1--1--1,|0||-1--1--1,1|(979,345)|
+1,21,7,9,0,0,43,0,2,64,0,-1--1--1,|0||-1--1--1,1|(980,288)|
+1,22,8,10,1,0,43,0,2,64,0,-1--1--1,|0||-1--1--1,1|(826,410)|
+1,23,15,4,0,0,45,0,2,64,0,-1--1--1,|0||-1--1--1,1|(537,112)|
+///---\\\
+:L<%^E!@
+9:Current
+22:$,Dollar,Dollars,$s
+22:Hour,Hours
+22:Month,Months
+22:Person,People,Persons
+22:Unit,Units
+22:Week,Weeks
+22:Year,Years
+22:Day,Days
+23:0
+15:0,0,0,0,0,0
+19:100,0
+27:2,
+34:0,
+5:Alkoholivero
+35:Date
+36:YYYY-MM-DD
+37:2000
+38:1
+39:1
+40:2
+41:0
+42:1
+24:0
+25:0
+26:0
