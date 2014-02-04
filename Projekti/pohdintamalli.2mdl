@@ -1,0 +1,174 @@
+{UTF-8}
+Alkoholiin liittyvät terveysongelmat=
+	DELAY3(Kokonaiskulutus,5)
+	~	
+	~		|
+
+Alkoholin kysyntä= ACTIVE INITIAL (
+	SMOOTH(MIN(Fyysiset rajoitukset alkoholin kulutukselle,(2+Sosiaalinen hyväksyntä+Alkoholoin arkipäiväistyminen\
+		)),1),
+		10)
+	~	
+	~		|
+
+Alkoholoin arkipäiväistyminen=
+	Kokonaiskulutus*1.5
+	~	
+	~		|
+
+Anniskelu=
+	0.1*Alkoholin tarve
+	~	
+	~		|
+
+Fyysiset rajoitukset alkoholin kulutukselle=
+	20
+	~	
+	~		|
+
+Sosiaalinen hyväksyntä=
+	-Alkoholiin liittyvät terveysongelmat
+	~	
+	~		|
+
+Vähittäismyynti=
+	1.2*Alkoholin tarve
+	~	
+	~		|
+
+Alkoholin tarve= INTEG (
+	Alkoholin kysyntä-Anniskelu-Vähittäismyynti-Maahantuonti,
+		0)
+	~	 [?,4]
+	~		|
+
+Kokonaiskulutus=
+	Tilastoimaton kulutus+Tilastoitu kulutus
+	~	
+	~		|
+
+Maahantuonti=
+	0.2*Alkoholin tarve
+	~	
+	~		|
+
+Tilastoimaton kulutus=
+	Maahantuonti
+	~	
+	~		|
+
+Tilastoitu kulutus=
+	Anniskelu+Vähittäismyynti
+	~	
+	~		|
+
+********************************************************
+	.Control
+********************************************************~
+		Simulation Control Parameters
+	|
+
+FINAL TIME  = 2014
+	~	Year
+	~	The final time for the simulation.
+	|
+
+INITIAL TIME  = 1990
+	~	Year
+	~	The initial time for the simulation.
+	|
+
+SAVEPER  = 
+        TIME STEP 
+	~	Year [0,?]
+	~	The frequency with which output is stored.
+	|
+
+TIME STEP  = 0.03125
+	~	Year [0,?]
+	~	The time step for the simulation.
+	|
+
+\\\---/// Sketch information - do not modify anything except names
+V300  Do not put anything below this section - it will be ignored
+*View 1
+$192-192-192,0,Times New Roman|12||0-0-0|0-0-0|0-0-255|-1--1--1|-1--1--1|96,96,100,0
+10,1,Tilastoitu kulutus,903,441,52,11,8,3,0,0,0,0,0,0
+10,2,Tilastoimaton kulutus,920,218,43,19,8,3,0,0,0,0,0,0
+10,3,Kokonaiskulutus,1068,528,53,11,8,3,0,0,0,0,0,0
+1,4,1,3,1,0,43,0,2,64,0,-1--1--1,|12||0-0-0,1|(992,507)|
+1,5,2,3,1,0,43,0,2,64,0,-1--1--1,|12||0-0-0,1|(1081,361)|
+10,6,Alkoholin tarve,595,292,40,20,3,3,0,0,0,0,0,0
+12,7,48,383,288,10,8,0,3,0,0,-1,0,0,0
+1,8,10,6,4,0,0,22,0,0,0,-1--1--1,,1|(518,289)|
+1,9,10,7,100,0,0,22,0,0,0,-1--1--1,,1|(431,289)|
+11,10,48,475,289,6,8,34,3,0,0,1,0,0,0
+10,11,Alkoholin kysyntä,475,308,56,11,40,3,0,0,-1,0,0,0
+12,12,48,871,293,10,8,0,3,0,0,-1,0,0,0
+1,13,15,12,4,0,0,22,0,0,0,-1--1--1,,1|(807,293)|
+1,14,15,6,100,0,0,22,0,0,0,-1--1--1,,1|(688,293)|
+11,15,48,748,293,6,8,34,3,0,0,1,0,0,0
+10,16,Vähittäismyynti,748,312,48,11,40,3,0,0,-1,0,0,0
+12,17,48,596,503,10,8,0,3,0,0,-1,0,0,0
+1,18,20,17,4,0,0,22,0,0,0,-1--1--1,,1|(596,452)|
+1,19,20,6,100,0,0,22,0,0,0,-1--1--1,,1|(596,354)|
+11,20,48,596,403,8,6,33,3,0,0,4,0,0,0
+10,21,Anniskelu,636,403,32,11,40,3,0,0,-1,0,0,0
+12,22,48,596,143,10,8,0,3,0,0,-1,0,0,0
+1,23,25,22,4,0,0,22,0,0,0,-1--1--1,,1|(596,178)|
+1,24,25,6,100,0,0,22,0,0,0,-1--1--1,,1|(596,244)|
+11,25,48,596,211,8,6,33,3,0,0,4,0,0,0
+10,26,Maahantuonti,647,211,43,11,40,3,0,0,-1,0,0,0
+1,27,6,16,1,0,43,0,2,192,0,-1--1--1,|12||0-0-0,1|(674,332)|
+1,28,6,26,1,0,43,0,2,64,0,-1--1--1,|12||0-0-0,1|(640,255)|
+1,29,6,21,1,0,43,0,2,64,0,-1--1--1,|12||0-0-0,1|(641,382)|
+1,30,26,2,1,0,43,0,2,64,0,-1--1--1,|12||0-0-0,1|(768,178)|
+1,31,16,1,1,0,43,0,2,64,0,-1--1--1,|12||0-0-0,1|(844,364)|
+1,32,21,1,1,0,43,0,2,64,0,-1--1--1,|12||0-0-0,1|(703,490)|
+10,39,Sosiaalinen hyväksyntä,404,430,36,19,8,3,0,0,0,0,0,0
+10,40,Alkoholiin liittyvät terveysongelmat,459,683,61,21,8,131,0,0,0,0,0,0
+1,44,39,11,1,0,43,0,2,64,0,-1--1--1,|0||-1--1--1,1|(419,360)|
+1,51,3,40,1,0,43,0,2,65,0,-1--1--1,|0||-1--1--1,1|(812,718)|
+1,52,40,39,1,0,45,0,2,64,0,-1--1--1,|0||-1--1--1,1|(404,557)|
+10,61,Fyysiset rajoitukset alkoholin kulutukselle,420,180,68,19,8,3,0,0,0,0,0,0
+1,62,61,10,1,0,45,0,2,64,0,-1--1--1,|0||-1--1--1,1|(458,231)|
+10,64,Alkoholoin arkipäiväistyminen,578,584,61,21,8,131,0,0,0,0,0,0
+1,65,3,64,1,0,43,0,2,64,0,-1--1--1,|0||-1--1--1,1|(840,618)|
+1,66,64,11,1,0,43,0,2,64,0,-1--1--1,|0||-1--1--1,1|(498,456)|
+///---\\\
+:GRAPH Kulutuksen_jakaantuminen
+:TITLE Kulutuksen jakaantuminen
+:X-AXIS Time
+:SCALE
+:VAR Anniskelu
+:VAR Vähittäismyynti
+:VAR Maahantuonti
+:VAR Kokonaiskulutus
+:L<%^E!@
+1:Current.vdf
+9:Current
+22:$,Dollar,Dollars,$s
+22:Hour,Hours
+22:Month,Months
+22:Person,People,Persons
+22:Unit,Units
+22:Week,Weeks
+22:Year,Years
+22:Day,Days
+23:0
+15:0,0,0,0,0,0
+19:100,0
+27:2,
+34:0,
+4:Time
+5:Alkoholin kysyntä
+35:Date
+36:YYYY-MM-DD
+37:2000
+38:1
+39:1
+40:0
+41:0
+24:1990
+25:2014
+26:2014

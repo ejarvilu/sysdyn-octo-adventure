@@ -1,4 +1,5 @@
 {UTF-8}
+<<<<<<< HEAD
 Alkoholivero  = A FUNCTION OF( )
 	~	
 	~		|
@@ -12,6 +13,55 @@ Hinta ulkomailla  = A FUNCTION OF( )
 	~		|
 
 Keskimääräiset matkakustannukset  = A FUNCTION OF( )
+=======
+Alkoholin arkipäiväistyminen  = A FUNCTION OF( Kokonaiskulutus)
+	~	
+	~		|
+
+Alkoholin kysyntä  = A FUNCTION OF( Sosiaalinen hyväksyntä)
+	~	
+	~		|
+
+Panimoyhtiöiden kannattavuus  = A FUNCTION OF( Tilastoitu kulutus)
+	~	
+	~		|
+
+Alkon myymälöiden lukumäärä  = A FUNCTION OF( )
+	~	
+	~		|
+
+Anniskellun alkoholin saatavuus  = A FUNCTION OF( Anniskeluaikojen rajoitukset,Anniskeluravintoloiden määrä\
+		)
+	~	
+	~		|
+
+Anniskelu ravintoloissa  = A FUNCTION OF( Alkoholin kysyntä,Anniskellun alkoholin saatavuus\
+		,Hinta ravintoloissa)
+	~	
+	~		|
+
+Anniskeluaikojen rajoitukset  = A FUNCTION OF( )
+	~	
+	~		|
+
+Anniskeluravintoloiden määrä  = A FUNCTION OF( Ravintolatoiminnan kannattavuus)
+	~	
+	~		|
+
+Hinnankorotuspaine  = A FUNCTION OF( Ravintolatoiminnan kannattavuus)
+	~	
+	~		|
+
+Hinta ravintoloissa  = A FUNCTION OF( Hinnankorotuspaine)
+	~	
+	~		|
+
+Mainonnan rajoitukset  = A FUNCTION OF( )
+	~	
+	~		|
+
+Panostus valistustoimenpiteisiin  = A FUNCTION OF( Kokonaiskulutus)
+>>>>>>> 5d7c1cf3408523d7462f6c03192a1f09e8457467
 	~	
 	~		|
 
@@ -23,6 +73,7 @@ Maahantuotu alkoholi  = A FUNCTION OF( Tuonnin houkuttelevuus)
 	~	
 	~		|
 
+<<<<<<< HEAD
 Tilastoimaton kulutus=A FUNCTION OF(Tilastoimaton kulutus,Maahantuotu alkoholi) ~~|
 Tilastoimaton kulutus=
 	~	
@@ -38,6 +89,41 @@ Tuonnin houkuttelevuus  = A FUNCTION OF( Hinta kotimaassa,Hinta ulkomailla,Keski
 	~		|
 
 Tuontirajoitukset  = A FUNCTION OF( )
+=======
+Sosiaalinen hyväksyntä  = A FUNCTION OF( Alkoholin arkipäiväistyminen,Mainostaminen\
+		,Panostus valistustoimenpiteisiin,Terveysongelmat)
+	~	
+	~		|
+
+Mainostaminen  = A FUNCTION OF( Mainonnan rajoitukset,Panimoyhtiöiden kannattavuus,Tilastoimaton kulutus\
+		)
+	~	
+	~		|
+
+Myyntiaikojen rajoitukset  = A FUNCTION OF( )
+	~	
+	~		|
+
+Myyntilupien määrä  = A FUNCTION OF( )
+	~	
+	~		|
+
+Ravintolatoiminnan kannattavuus  = A FUNCTION OF( Anniskelu ravintoloissa,Hinta ravintoloissa\
+		,Ravintoloiden kustannukset)
+	~	
+	~		|
+
+Terveysongelmat  = A FUNCTION OF( Kokonaiskulutus)
+	~	
+	~		|
+
+Vähittäismyydyn alkoholin saatavuus  = A FUNCTION OF( Alkon myymälöiden lukumäärä\
+		,Myyntiaikojen rajoitukset,Myyntilupien määrä)
+	~	
+	~		|
+
+Ravintoloiden kustannukset  = A FUNCTION OF( )
+>>>>>>> 5d7c1cf3408523d7462f6c03192a1f09e8457467
 	~	
 	~		|
 
@@ -45,6 +131,50 @@ Verotulot  = A FUNCTION OF( Alkoholivero,Tilastoitu kulutus)
 	~	
 	~		|
 
+<<<<<<< HEAD
+=======
+Tilastoitu kulutus  = A FUNCTION OF( Anniskelu ravintoloissa,Vähittäismyynti kaupoissa ja Alkossa\
+		) ~~|
+Tilastoitu kulutus=
+	~	
+	~		|
+
+Vähittäismyynti kaupoissa ja Alkossa  = A FUNCTION OF( Alkoholin kysyntä,Vähittäismyydyn alkoholin saatavuus\
+		,Vähittäismyyntihinta kotimaassa)
+	~	
+	~		|
+
+Alkoholivero  = A FUNCTION OF( )
+	~	
+	~		|
+
+Vähittäismyyntihinta kotimaassa  = A FUNCTION OF( Alkoholivero)
+	~	
+	~		|
+
+Hinta ulkomailla  = A FUNCTION OF( )
+	~	
+	~		|
+
+Keskimääräiset matkakustannukset  = A FUNCTION OF( )
+	~	
+	~		|
+
+Tilastoimaton kulutus=A FUNCTION OF(Tilastoimaton kulutus,Maahantuotu alkoholi) ~~|
+Tilastoimaton kulutus=
+	~	
+	~		|
+
+Tuonnin houkuttelevuus  = A FUNCTION OF( Vähittäismyyntihinta kotimaassa,Hinta ulkomailla\
+		,Keskimääräiset matkakustannukset,Tuontirajoitukset)
+	~	
+	~		|
+
+Tuontirajoitukset  = A FUNCTION OF( )
+	~	
+	~		|
+
+>>>>>>> 5d7c1cf3408523d7462f6c03192a1f09e8457467
 ********************************************************
 	.Control
 ********************************************************~
@@ -62,7 +192,11 @@ INITIAL TIME  = 0
 	|
 
 SAVEPER  = 
+<<<<<<< HEAD
         TIME STEP 
+=======
+        TIME STEP
+>>>>>>> 5d7c1cf3408523d7462f6c03192a1f09e8457467
 	~	Month [0,?]
 	~	The frequency with which output is stored.
 	|
@@ -76,6 +210,7 @@ TIME STEP  = 1
 V300  Do not put anything below this section - it will be ignored
 *View 1
 $192-192-192,0,Times New Roman|12||0-0-0|0-0-0|0-0-255|-1--1--1|-1--1--1|96,96,100,0
+<<<<<<< HEAD
 10,1,Alkoholivero,161,340,41,11,8,3,0,0,0,0,0,0
 10,2,Hinta kotimaassa,269,255,54,11,8,3,0,0,0,0,0,0
 10,3,Keskimääräiset matkakustannukset,318,79,61,19,8,3,0,0,0,0,0,0
@@ -99,6 +234,89 @@ $192-192-192,0,Times New Roman|12||0-0-0|0-0-0|0-0-255|-1--1--1|-1--1--1|96,96,1
 1,21,7,9,0,0,43,0,2,64,0,-1--1--1,|0||-1--1--1,1|(980,288)|
 1,22,8,10,1,0,43,0,2,64,0,-1--1--1,|0||-1--1--1,1|(826,410)|
 1,23,15,4,0,0,45,0,2,64,0,-1--1--1,|0||-1--1--1,1|(537,112)|
+=======
+10,1,Alkoholivero,1763,79,41,11,8,3,0,0,0,0,0,0
+10,2,Vähittäismyyntihinta kotimaassa,1360,270,63,19,8,3,0,0,0,0,0,0
+10,3,Keskimääräiset matkakustannukset,1197,75,61,19,8,3,0,0,0,0,0,0
+10,4,Tuonnin houkuttelevuus,1267,182,47,19,8,3,0,0,0,0,0,0
+10,5,Hinta ulkomailla,1437,109,50,11,8,3,0,0,0,0,0,0
+10,6,Maahantuotu alkoholi,1024,96,42,19,8,3,0,0,0,0,0,0
+10,7,Tilastoimaton kulutus,788,142,43,19,8,131,0,0,0,0,0,0
+10,8,Tilastoitu kulutus,1045,279,52,11,8,3,0,0,0,0,0,0
+10,9,Kokonaiskulutus,606,298,53,11,8,3,0,0,0,0,0,0
+10,10,Verotulot,1715,204,31,11,8,3,0,0,0,0,0,0
+1,11,1,2,1,0,43,0,2,64,0,-1--1--1,|12||0-0-0,1|(1555,198)|
+1,12,3,4,1,0,43,0,2,64,0,-1--1--1,|12||0-0-0,1|(1214,117)|
+1,13,5,4,1,0,45,0,2,64,0,-1--1--1,|12||0-0-0,1|(1339,126)|
+1,14,2,4,1,0,43,0,2,64,0,-1--1--1,|12||0-0-0,1|(1332,224)|
+10,15,Tuontirajoitukset,1350,65,53,11,8,3,0,0,0,0,0,0
+1,16,4,6,1,0,43,0,2,64,0,-1--1--1,|12||0-0-0,1|(1127,97)|
+1,17,6,7,1,0,43,0,2,64,0,-1--1--1,|12||0-0-0,1|(894,106)|
+1,18,1,10,1,0,43,0,2,64,0,-1--1--1,|12||0-0-0,1|(1751,162)|
+1,19,8,9,1,0,43,0,2,64,0,-1--1--1,|12||0-0-0,1|(830,214)|
+1,20,7,9,1,0,43,0,2,192,0,-1--1--1,|12||0-0-0,1|(670,211)|
+1,21,15,4,1,0,45,0,2,64,0,-1--1--1,|12||0-0-0,1|(1285,100)|
+10,22,Myyntilupien määrä,1709,398,41,19,8,3,0,0,0,0,0,0
+10,23,Vähittäismyydyn alkoholin saatavuus,1519,400,61,19,8,3,0,0,0,0,0,0
+1,24,22,23,1,0,43,0,2,64,0,-1--1--1,|0||-1--1--1,1|(1616,385)|
+10,25,Alkon myymälöiden lukumäärä,1710,345,64,19,8,3,0,0,0,0,0,0
+1,26,25,23,1,0,43,0,2,192,0,-1--1--1,|0||-1--1--1,1|(1594,348)|
+10,27,Myyntiaikojen rajoitukset,1709,446,46,19,8,3,0,0,0,0,0,0
+1,28,27,23,1,0,45,0,2,192,0,-1--1--1,|0||-1--1--1,1|(1594,440)|
+10,29,Panostus valistustoimenpiteisiin,575,601,67,19,8,3,0,0,0,0,0,0
+1,30,9,29,1,0,43,0,2,64,0,-1--1--1,|0||-1--1--1,1|(543,409)|
+10,31,Sosiaalinen hyväksyntä,833,619,36,19,8,3,0,0,0,0,0,0
+1,32,29,31,1,0,45,0,2,64,0,-1--1--1,|0||-1--1--1,1|(613,644)|
+10,33,Tilastoitu kulutus,1833,138,34,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|0||128-128-128
+1,34,33,10,1,0,43,0,2,64,0,-1--1--1,|0||-1--1--1,1|(1795,196)|
+10,35,Terveysongelmat,517,676,53,11,8,3,0,0,0,0,0,0
+1,36,9,35,1,0,43,0,2,64,0,-1--1--1,|0||-1--1--1,1|(466,446)|
+1,37,35,31,1,0,45,0,2,192,0,-1--1--1,|0||-1--1--1,1|(673,727)|
+10,38,Alkoholin kysyntä,976,601,56,11,8,3,0,0,0,0,0,0
+1,39,31,38,1,0,43,0,2,64,0,-1--1--1,|0||-1--1--1,1|(918,626)|
+12,40,0,898,106,20,12,3,135,0,4,-1,0,0,0,-1--1--1,255-255-255,|0||0-0-0
+Delay
+12,41,0,471,425,20,12,3,135,0,4,-1,0,0,0,-1--1--1,255-255-255,|0||0-0-0
+Delay
+12,42,0,541,441,20,12,3,135,0,4,-1,0,0,0,-1--1--1,255-255-255,|0||0-0-0
+Delay
+10,43,Alkoholin arkipäiväistyminen,682,575,58,19,8,3,0,0,0,0,0,0
+1,44,9,43,1,0,43,0,2,64,0,-1--1--1,|0||-1--1--1,1|(587,405)|
+1,45,43,31,1,0,43,0,2,64,0,-1--1--1,|0||-1--1--1,1|(750,625)|
+10,46,Mainonnan rajoitukset,825,498,36,19,8,3,0,0,0,0,0,0
+10,47,Mainostaminen,699,456,48,11,8,3,0,0,0,0,0,0
+1,48,46,47,1,0,45,0,2,64,0,-1--1--1,|0||-1--1--1,1|(748,453)|
+1,49,47,31,1,0,43,0,2,192,0,-1--1--1,|0||-1--1--1,1|(767,588)|
+10,50,Anniskelu ravintoloissa,1215,491,40,19,8,3,0,0,0,0,0,0
+10,51,Vähittäismyynti kaupoissa ja Alkossa,1240,344,68,19,8,3,0,0,0,0,0,0
+1,52,50,8,1,0,43,0,2,64,0,-1--1--1,|0||-1--1--1,1|(1146,383)|
+1,53,51,8,1,0,43,0,2,64,0,-1--1--1,|0||-1--1--1,1|(1128,273)|
+1,54,23,51,1,0,43,0,2,64,0,-1--1--1,|0||-1--1--1,1|(1341,342)|
+10,55,Anniskellun alkoholin saatavuus,1467,513,61,19,8,3,0,0,0,0,0,0
+10,56,Anniskeluravintoloiden määrä,1561,642,72,19,8,3,0,0,0,0,0,0
+10,57,Anniskeluaikojen rajoitukset,1708,517,55,19,8,3,0,0,0,0,0,0
+1,58,56,55,1,0,43,0,2,64,0,-1--1--1,|0||-1--1--1,1|(1561,585)|
+1,59,57,55,1,0,45,0,2,64,0,-1--1--1,|0||-1--1--1,1|(1588,493)|
+10,60,Hinta ravintoloissa,1341,571,57,11,8,3,0,0,0,0,0,0
+1,61,55,50,1,0,43,0,2,64,0,-1--1--1,|0||-1--1--1,1|(1341,480)|
+1,62,60,50,1,0,45,0,2,64,0,-1--1--1,|0||-1--1--1,1|(1277,515)|
+10,63,Ravintolatoiminnan kannattavuus,1233,694,60,19,8,3,0,0,0,0,0,0
+1,64,50,63,1,0,43,0,2,64,0,-1--1--1,|0||-1--1--1,1|(1186,626)|
+1,65,60,63,1,0,43,0,2,192,0,-1--1--1,|0||-1--1--1,1|(1285,608)|
+1,66,38,50,1,0,0,0,0,64,0,-1--1--1,,1|(1038,592)|
+1,67,38,51,1,0,0,0,0,64,0,-1--1--1,,1|(1101,524)|
+10,68,Hinnankorotuspaine,1394,653,48,21,8,131,0,0,0,0,0,0
+1,69,63,68,1,0,45,0,2,64,0,-1--1--1,|0||-1--1--1,1|(1329,707)|
+1,70,68,60,1,0,43,0,2,64,0,-1--1--1,|0||-1--1--1,1|(1405,612)|
+1,71,63,56,1,0,45,0,2,64,0,-1--1--1,|0||-1--1--1,1|(1414,730)|
+10,72,Ravintoloiden kustannukset,1127,742,44,19,8,3,0,0,0,0,0,0
+1,73,72,63,1,0,45,0,2,64,0,-1--1--1,|0||-1--1--1,1|(1189,734)|
+1,74,2,51,1,0,45,0,2,64,0,-1--1--1,|0||-1--1--1,1|(1322,311)|
+1,75,7,47,1,0,43,0,2,192,0,-1--1--1,|0||-1--1--1,1|(674,371)|
+10,76,Panimoyhtiöiden kannattavuus,800,315,53,19,8,3,0,0,0,0,0,0
+1,77,8,76,1,0,45,0,2,64,0,-1--1--1,|0||-1--1--1,1|(890,271)|
+1,78,76,47,1,0,45,0,2,64,0,-1--1--1,|0||-1--1--1,1|(727,381)|
+>>>>>>> 5d7c1cf3408523d7462f6c03192a1f09e8457467
 ///---\\\
 :L<%^E!@
 9:Current
@@ -115,7 +333,11 @@ $192-192-192,0,Times New Roman|12||0-0-0|0-0-0|0-0-255|-1--1--1|-1--1--1|96,96,1
 19:100,0
 27:2,
 34:0,
+<<<<<<< HEAD
 5:Alkoholivero
+=======
+5:Tilastoimaton kulutus
+>>>>>>> 5d7c1cf3408523d7462f6c03192a1f09e8457467
 35:Date
 36:YYYY-MM-DD
 37:2000
